@@ -1,0 +1,41 @@
+{
+    "name": "psc-acme/registry-billing",
+    "description": "Package registry-billing for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\RegistryBilling\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "doctrine/dbal": "^4.0",
+        "symfony/serializer": "^7.0",
+        "symfony/validator": "^7.0",
+        "symfony/http-foundation": "^7.0",
+        "psc-acme/processor-billing": "^1.0",
+        "psc-acme/manager-billing": "^1.0",
+        "psc-acme/adapter-billing": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
